@@ -12,3 +12,6 @@ var regex = /^(?:#(?:(?:([A-F\d])\1{2})|(?:([A-F\d]{2})\2{2}))|rgb(?:\([\s0]*([^
 
 //http://callumacrae.github.com/regex-tuesday/challenge3.html
 var regex = /^(?:1\d{3}|20(?:0\d|1[0-2]))\/(?:0[1-9]|1[0-2])\/(?:0[1-9]|[12]\d|30) (?:[01]\d|2[0-3])(?::(?:[0-5]\d))+$/
+
+//http://callumacrae.github.com/regex-tuesday/challenge4.html
+var regex = /\*((?:[^\*]|\*\*)+)\*(?!\*)/ig
