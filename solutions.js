@@ -19,3 +19,7 @@ var regex = /^(?:1\d{3}|20(?:0\d|1[0-2]))\/(?:0[1-9]|1[0-2])\/(?:0[1-9]|[12]\d|3
 //http://callumacrae.github.com/regex-tuesday/challenge4.html
 //http://callumacrae.github.com/regex-tuesday/challenge4.html?find=%2F(%5B%5E*%5D%7C%5E)%5C*((%3F%3A%5B%5E*%5D%7C%5C*%7B2%7D)%2B)%5C*(%3F!%5C*)%2Fg&replace=%241%3Cem%3E%242%3C%2Fem%3E
 var regex = /([^*]|^)\*((?:[^*]|\*{2})+)\*(?!\*)/g, replacement = "$1<em>$2</em>"
+
+//http://callumacrae.github.com/regex-tuesday/challenge5.html
+//http://callumacrae.github.com/regex-tuesday/challenge5.html?find=%2F%5E%5Cd%7B1%2C3%7D(%3F%3A(%3F%3A%2C%5Cd%7B3%7D)*(%3F%3A%5C.%5Cd%2B)%3F%7C(%3F%3A%20%5Cd%7B3%7D)*(%3F%3A%2C%5Cd%2B)%3F)%24%2F
+var regex = /^\d{1,3}(?:(?:,\d{3})*(?:\.\d+)?|(?: \d{3})*(?:,\d+)?)$/
